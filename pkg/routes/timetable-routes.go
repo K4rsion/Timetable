@@ -1,13 +1,13 @@
 package routes
 
 import (
-	"MiniZincPlusServer/pkg/controllers"
+	"Timetable/pkg/middleware"
 	"github.com/gorilla/mux"
 )
 
-var RegisterTimetableRoutes = func(router *mux.Router) {
+func RegisterTimetableRoutes(router *mux.Router) {
 	//router.HandleFunc("/schedule/auto/", controllers.AutoHandler).Methods("POST")
-	router.HandleFunc("/schedule/manual/", controllers.AutoHandler).Methods("POST")
+	router.HandleFunc("/schedule/manual/", middleware.MiddleHandler).Methods("POST")
 	//router.HandleFunc("/schedule/import/", controllers.AutoHandler).Methods("POST")
 	//router.HandleFunc("/schedule/{scheduleID}", controllers.AutoHandler).Methods("GET")
 	//router.HandleFunc("/schedule/{scheduleID}", controllers.AutoHandler).Methods("DELETE")

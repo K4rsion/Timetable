@@ -2,7 +2,7 @@ package main
 
 // про решения посмотреть
 import (
-	"MiniZincPlusServer/pkg/routes"
+	"Timetable/pkg/routes"
 	"github.com/gorilla/mux"
 	"log"
 	"net/http"

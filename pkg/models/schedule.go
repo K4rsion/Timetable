@@ -1,7 +1,7 @@
 package models
 
 import (
-	"MiniZincPlusServer/pkg/config"
+	"Timetable/pkg/config"
 	"gorm.io/gorm"
 )
 
@@ -13,6 +13,7 @@ type Schedule struct {
 	Teachers []string `json:"teachers"`
 	Subjects []string `json:"subjects"`
 	Rooms    []string `json:"rooms"`
+	//constraints
 }
 
 func init() {
@@ -32,3 +33,6 @@ func GetAllSchedules() []Schedule {
 	db.Find(&Schedules)
 	return Schedules
 }
+
+//RemoveSchedule
+//UpdateSchedule
