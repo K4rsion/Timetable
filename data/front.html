@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Selection</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Select Options</h2>
+
+    <form id="optionsForm">
+        <h3 onclick="toggleDropdown('subjectsDropdown')">Subjects</h3>
+        <div id="subjectsDropdown" class="hidden">
+            <label>
+                <input type="checkbox" name="subjects" value="Math"> Mathematics
+            </label>
+            <label>
+                <input type="checkbox" name="subjects" value="History"> History
+            </label>
+            <label>
+                <input type="checkbox" name="subjects" value="Programming"> Programming
+            </label>
+            <label>
+                <input type="checkbox" name="subjects" value="Geography"> Geography
+            </label>
+            <label>
+                <input type="checkbox" name="subjects" value="Biology"> Biology
+            </label>
+        </div>
+
+        <h3 onclick="toggleDropdown('tutorsDropdown')">Tutors</h3>
+        <div id="tutorsDropdown" class="hidden">
+            <label>
+                <input type="checkbox" name="tutors" value="John"> John
+            </label>
+            <label>
+                <input type="checkbox" name="tutors" value="Alice"> Alice
+            </label>
+            <label>
+                <input type="checkbox" name="tutors" value="Bob"> Bob
+            </label>
+        </div>
+
+        <h3 onclick="toggleDropdown('roomsDropdown')">Rooms</h3>
+        <div id="roomsDropdown" class="hidden">
+            <label>
+                <input type="checkbox" name="rooms" value="101"> Room 101
+            </label>
+            <label>
+                <input type="checkbox" name="rooms" value="102"> Room 102
+            </label>
+            <label>
+                <input type="checkbox" name="rooms" value="103"> Room 103
+            </label>
+        </div>
+
+        <button type="button" onclick="createRequest()">Create</button>
+    </form>
+
+    <script>
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            dropdown.classList.toggle('hidden', !dropdown.classList.contains('hidden'));
+        }
+
+        function createRequest() {
+            const form = document.getElementById('optionsForm');
+            const formData = new FormData(form);
+            const selectedData = {};
+
+            for (const [name, value] of formData) {
+                if (!selectedData[name]) {
+                    selectedData[name] = [];
+                }
+                selectedData[name].push(value);
+            }
+
+            // Convert to JSON
+            const jsonData = JSON.stringify(selectedData);
+            console.log(jsonData);
+
+            // Here you can make an AJAX request to the backend with jsonData
+            // Example using fetch:
+            fetch('http://localhost:8080/solve', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: jsonData,
+            })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+
+</body>
+</html>
