@@ -1,7 +1,6 @@
 package middleware
 
 import "net/http"
-import "Timetable/pkg/controllers"
 
 func MiddleHandler(w http.ResponseWriter, r *http.Request) {
 	if origin := r.Header.Get("Origin"); origin != "" {
@@ -11,5 +10,5 @@ func MiddleHandler(w http.ResponseWriter, r *http.Request) {
 			"Accept, Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization")
 		w.WriteHeader(http.StatusOK)
 	}
-	controllers.AutoScheduleGenerator(w, r)
+	//controllers.AutoScheduleGenerator(w, r)
 }

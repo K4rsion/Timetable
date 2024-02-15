@@ -3,8 +3,8 @@ package config
 // настройка подключения с БД. методы - Connect,GetDB
 
 import (
-	"gorm.io/driver/mysql"
-	"gorm.io/gorm"
+	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 var (
@@ -12,8 +12,8 @@ var (
 )
 
 func Connect() {
-	dsn := "root:MySQL_password@tcp(127.0.0.1:3306)/mysql?charset=utf8mb4&parseTime=True&loc=Local"
-	d, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
+	dsn := "root:MySQL_password@tcp(127.0.0.1:3306)/timetabledb?charset=utf8mb4&parseTime=True&loc=Local"
+	d, err := gorm.Open("mysql", dsn)
 	if err != nil {
 		panic(err)
 	}
