@@ -1,0 +1,96 @@
+@import '../../styles/variables.scss';
+.slotInput {
+  margin-top: $spacing-md;
+  padding: $spacing-md;
+  background-color: $lightGray;
+  border-radius: $borderRadius;
+  box-shadow: $box-shadow-sm;
+
+  .inputGroup {
+    margin-bottom: $spacing-md;
+
+    label {
+      display: block;
+      font-weight: 600;
+      color: $dark;
+      margin-bottom: $spacing-sm;
+    }
+
+    select, input {
+      width: 100%;
+      padding: $spacing-sm;
+      border: 1px solid $darkGray;
+      border-radius: $borderRadius;
+      font-family: $Poppins;
+    }
+  }
+
+  .groupItem {
+    margin-bottom: $spacing-md;
+    display: flex;
+    align-items: center;
+
+    select {
+      flex-grow: 1;
+      padding: $spacing-sm;
+      border: 1px solid $darkGray;
+      border-radius: $borderRadius;
+      font-family: $Poppins;
+    }
+
+    .button {
+      margin-left: $spacing-sm;
+      padding: $spacing-sm $spacing-md;
+      background-color: $primary;
+      color: white;
+      border: none;
+      border-radius: $borderRadius;
+      cursor: pointer;
+      font-family: $Poppins;
+      font-weight: bold;
+
+      &.danger {
+        background-color: $danger;
+
+        &:hover {
+          background-color: darken($danger, 10%);
+        }
+      }
+
+      &.add {
+        background-color: $primary;
+
+        &:hover {
+          background-color: darken($primary, 10%);
+        }
+      }
+    }
+  }
+
+  .button {
+    padding: $spacing-sm $spacing-md;
+    background-color: $primary;
+    color: white;
+    border: none;
+    border-radius: $borderRadius;
+    cursor: pointer;
+    font-family: $Poppins;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $dark;
+    }
+  }
+
+  .danger {
+    background-color: $danger;
+
+    &:hover {
+      background-color: darken($danger, 10%);
+    }
+  }
+
+  .removeSlotButton {
+    margin-top: $spacing-md;
+  }
+}

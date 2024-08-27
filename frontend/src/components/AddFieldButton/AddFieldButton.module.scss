@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.addFieldButton {
+  margin-top: 1em;
+  padding: $spacing-sm $spacing-md;
+  background-color: $primary;
+  color: white;
+  border: none;
+  border-radius: $borderRadius;
+  cursor: pointer;
+  font-family: $Poppins;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $dark;
+  }
+}

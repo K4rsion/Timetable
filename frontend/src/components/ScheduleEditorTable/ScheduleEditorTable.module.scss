@@ -1,0 +1,75 @@
+/* ScheduleEditorTable.module.scss */
+
+@import './../../styles/variables.scss';
+
+.table-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background-color: $tableBackground;
+  border: 1px solid $tableBorder;
+  border-radius: 4px;
+  font-size: 0.9rem;
+
+  th,
+  td {
+    border: 1px solid $tableBorder;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: $black;
+  }
+
+  th {
+    background-color: $dark;
+    color: $white;
+  }
+
+  td {
+    background-color: $lightGray;
+  }
+
+  .time-column {
+    background-color: $dark;
+    color: $white;
+  }
+
+  @include breakpoint(md) {
+    th,
+    td {
+      font-size: 1rem;
+    }
+  }
+
+  @include breakpoint(lg) {
+    th,
+    td {
+      font-size: 1.2rem;
+    }
+  }
+
+  @include breakpoint(xl) {
+    th,
+    td {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .table {
+      font-size: 0.8rem;
+
+      th,
+      td {
+        padding: 4px;
+      }
+    }
+  }
+}

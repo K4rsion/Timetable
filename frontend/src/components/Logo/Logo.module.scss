@@ -1,0 +1,10 @@
+@import './../../styles/variables.scss';
+@import 'sass-text-stroke/_text-stroke';
+
+.logo {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    padding-top: 30px;
+}

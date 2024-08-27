@@ -1,0 +1,38 @@
+@import '../styles/variables.scss';
+
+.pageContainer {
+  padding: $spacing-md;
+}
+
+.contentContainer {
+  margin-top: $spacing-sm;
+}
+
+.removeSlotButton, .addFieldButton {
+  padding: $spacing-sm $spacing-md;
+  background-color: $danger;
+  color: white;
+  border: none;
+  border-radius: $borderRadius;
+  cursor: pointer;
+  font-family: $Poppins;
+  font-weight: bold;
+
+  &:hover {
+    background-color: darken($danger, 10%);
+  }
+}
+
+.header {
+    padding-bottom: 1em;
+    font-size: 2rem;
+}
+
+.small_header_auditorium {
+    padding-bottom: 1em;
+    font-size: 1.5rem;
+}
+
+.small_header_slots {
+    font-size: 1.5rem;
+}

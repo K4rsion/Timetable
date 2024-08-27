@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+
+.toggleSwitch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.toggle {
+  width: 30px; // Увеличиваем размер квадрата
+  height: 30px; // Увеличиваем размер квадрата
+  border: 2px solid #ccc;
+  border-radius: 8px; // Закругляем края
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.toggleSwitch:hover .toggle {
+  border-color: $light;
+}
+
+.active {
+  background-color: $dark;
+}
+
+span {
+  font-size: 1.5rem; // Увеличиваем размер текста
+  font-weight: bold;
+}

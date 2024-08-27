@@ -1,0 +1,214 @@
+[
+  {
+    "teacher": "Александр Власов",
+    "teacher_code": "000005",
+    "subject": "ПАК",
+    "groups": [
+      "21215"
+    ],
+    "type": "Семинар",
+    "duration_hours": "1",
+    "classroom": "1155",
+    "day": "Пт",
+    "timeslots": [
+      19
+    ]
+  },
+  {
+    "teacher": "Александр Власов",
+    "teacher_code": "000005",
+    "subject": "ПАК",
+    "groups": [
+      "21213",
+      "21214",
+      "21215",
+      "21216"
+    ],
+    "type": "Лекция",
+    "duration_hours": "3",
+    "classroom": "3107",
+    "day": "Ср",
+    "timeslots": [
+      14,
+      15,
+      16
+    ]
+  },
+  {
+    "teacher": "Александр Власов",
+    "teacher_code": "000005",
+    "subject": "ПАК",
+    "groups": [
+      "21216"
+    ],
+    "type": "Семинар",
+    "duration_hours": "1",
+    "classroom": "1156",
+    "day": "Пт",
+    "timeslots": [
+      20
+    ]
+  },
+  {
+    "teacher": "Андрей Толстов",
+    "teacher_code": "000003",
+    "subject": "Физкультура и спорт",
+    "groups": [
+      "21213",
+      "21214",
+      "21215",
+      "21216"
+    ],
+    "type": "Семинар",
+    "duration_hours": "2",
+    "classroom": "Спортивный комплекс",
+    "day": "Пн",
+    "timeslots": [
+      15,
+      16
+    ]
+  },
+  {
+    "teacher": "Дмитрий Иртегов",
+    "teacher_code": "000001",
+    "subject": "Python",
+    "groups": [
+      "21213",
+      "21214",
+      "21215",
+      "21216"
+    ],
+    "type": "Лекция",
+    "duration_hours": "1",
+    "classroom": "3107",
+    "day": "Ср",
+    "timeslots": [
+      17
+    ]
+  },
+  {
+    "teacher": "Денис Мигинский",
+    "teacher_code": "000002",
+    "subject": "Проектирование ПО",
+    "groups": [
+      "21213",
+      "21214",
+      "21215",
+      "21216"
+    ],
+    "type": "Лекция",
+    "duration_hours": "2",
+    "classroom": "3107",
+    "day": "Ср",
+    "timeslots": [
+      18,
+      19
+    ]
+  },
+  {
+    "teacher": "Дмитрий Иртегов",
+    "teacher_code": "000001",
+    "subject": "Python",
+    "groups": [
+      "21214"
+    ],
+    "type": "Семинар",
+    "duration_hours": "1",
+    "classroom": "4213",
+    "day": "Пн",
+    "timeslots": [
+      13
+    ]
+  },
+  {
+    "teacher": "Дмитрий Иртегов",
+    "teacher_code": "000001",
+    "subject": "Python",
+    "groups": [
+      "21215"
+    ],
+    "type": "Семинар",
+    "duration_hours": "1",
+    "classroom": "4214",
+    "day": "Чт",
+    "timeslots": [
+      14
+    ]
+  },
+  {
+    "teacher": "Александр Власов",
+    "teacher_code": "000005",
+    "subject": "ПАК",
+    "groups": [
+      "21213"
+    ],
+    "type": "Семинар",
+    "duration_hours": "1",
+    "classroom": "1156",
+    "day": "Пн",
+    "timeslots": [
+      13
+    ]
+  },
+  {
+    "teacher": "Дмитрий Иртегов",
+    "teacher_code": "000001",
+    "subject": "Python",
+    "groups": [
+      "21213"
+    ],
+    "type": "Семинар",
+    "duration_hours": "1",
+    "classroom": "4214",
+    "day": "Пн",
+    "timeslots": [
+      14
+    ]
+  },
+  {
+    "teacher": "Роман Брек",
+    "teacher_code": "000004",
+    "subject": "Проектирование ПО",
+    "groups": [
+      "21213",
+      "21214"
+    ],
+    "type": "Семинар",
+    "duration_hours": "1",
+    "classroom": "2213",
+    "day": "Чт",
+    "timeslots": [
+      16
+    ]
+  },
+  {
+    "teacher": "Дмитрий Иртегов",
+    "teacher_code": "000001",
+    "subject": "Python",
+    "groups": [
+      "21216"
+    ],
+    "type": "Семинар",
+    "duration_hours": "1",
+    "classroom": "4213",
+    "day": "Чт",
+    "timeslots": [
+      16
+    ]
+  },
+  {
+    "teacher": "Александр Власов",
+    "teacher_code": "000005",
+    "subject": "ПАК",
+    "groups": [
+      "21214"
+    ],
+    "type": "Семинар",
+    "duration_hours": "1",
+    "classroom": "1156",
+    "day": "Пн",
+    "timeslots": [
+      14
+    ]
+  }
+]

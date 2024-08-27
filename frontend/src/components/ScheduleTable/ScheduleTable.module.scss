@@ -1,0 +1,70 @@
+@import './../../styles/variables.scss';
+
+.tableContainer {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background-color: $tableBackground;
+
+  th,
+  td {
+    border: 1px solid $tableBorder;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold; /* Жирный текст */
+    color: black; /* Черный цвет текста */
+  }
+
+  th {
+    background-color: $dark;
+    color: white;
+  }
+
+  td {
+    background-color: $lightGray;
+  }
+
+  .timeColumn {
+    background-color: $dark; /* Зеленый цвет для столбца Time */
+    color: white;
+  }
+
+  @include breakpoint(md) {
+    th,
+    td {
+      font-size: 1rem;
+    }
+  }
+
+  @include breakpoint(lg) {
+    th,
+    td {
+      font-size: 1.2rem;
+    }
+  }
+
+  @include breakpoint(xl) {
+    th,
+    td {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .table {
+      font-size: 0.8rem;
+
+      th,
+      td {
+        padding: 4px;
+      }
+    }
+  }
+}

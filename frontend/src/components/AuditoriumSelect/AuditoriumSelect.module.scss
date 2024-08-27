@@ -1,0 +1,81 @@
+@import '../../styles/variables.scss';
+
+.auditoriumSelect {
+  margin-bottom: $spacing-md;
+
+  label {
+    display: block;
+    font-weight: 600;
+    color: $dark;
+    margin-bottom: $spacing-sm;
+  }
+
+  .auditoriumItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: $spacing-sm;
+
+    select {
+      flex: 1;
+      padding: $spacing-sm;
+      border: 1px solid $darkGray;
+      border-radius: $borderRadius;
+      font-family: $Poppins;
+    }
+
+    button {
+      margin-left: $spacing-sm;
+      padding: $spacing-sm $spacing-md;
+      font-weight: bold;  // Жирный шрифт
+      border: none;
+      border-radius: $borderRadius;
+      cursor: pointer;
+      font-family: $Poppins;
+
+      &.danger {
+        background-color: $danger;
+        color: white;
+
+        &:hover {
+          background-color: darken($danger, 10%);
+        }
+      }
+
+      &.add {
+        background-color: $primary;
+        color: white;
+
+        &:hover {
+          background-color: $dark;
+        }
+      }
+    }
+  }
+
+  button {
+    padding: $spacing-sm $spacing-md;
+    font-weight: bold;  // Жирный шрифт
+    border: none;
+    border-radius: $borderRadius;
+    cursor: pointer;
+    font-family: $Poppins;
+
+    &.danger {
+      background-color: $danger;
+      color: white;
+
+      &:hover {
+        background-color: darken($danger, 10%);
+      }
+    }
+
+    &.add {
+      background-color: $primary;
+      color: white;
+
+      &:hover {
+        background-color: $dark;
+      }
+    }
+  }
+}

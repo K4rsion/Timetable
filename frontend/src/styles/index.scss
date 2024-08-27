@@ -1,0 +1,45 @@
+@import './variables.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: $Ubuntu;
+  color: $black;
+}
+
+/* Глобальные стили для скрытия скроллбара и сохранения прокрутки */
+body {
+  overflow: hidden; /* Отключает прокрутку для body */
+}
+
+#root {
+  overflow: auto; /* Включает прокрутку для #root */
+}
+
+/* Стили для скрытия скроллбара */
+body::-webkit-scrollbar, #root::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+body {
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#root {
+  -ms-overflow-style: none;  /* IE и Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.center-full {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

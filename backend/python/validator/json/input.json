@@ -1,0 +1,49 @@
+[
+    {
+        "teacher": "Александр Власов",
+        "teacher_code": "000005",
+        "subject": "ПАК",
+        "groups": [
+            "21214"
+        ],
+        "type": "Лекция",
+        "duration_hours": "3",
+        "classroom": "3107",
+        "day": "Пн",
+        "timeslots": [
+            11,
+            12,
+            13
+        ]
+    },
+    {
+        "teacher": "Александр Власов",
+        "teacher_code": "000005",
+        "subject": "Проектирование ПО",
+        "groups": [
+            "21213"
+        ],
+        "type": "Семинар",
+        "duration_hours": "1",
+        "classroom": "3107",
+        "day": "Пн",
+        "timeslots": [
+            13
+        ]
+    },
+    {
+        "teacher": "Александр Власов",
+        "teacher_code": "000005",
+        "subject": "ПО",
+        "groups": [
+            "21213"
+        ],
+        "type": "Семинар",
+        "duration_hours": "1",
+        "classroom": "3107",
+        "day": "Пн",
+        "timeslots": [
+            13
+        ]
+    }
+]

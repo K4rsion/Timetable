@@ -1,0 +1,31 @@
+@import '../../styles/variables.scss';
+
+.toggleSwitch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.toggle {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+  appearance: none; // убираем стандартный вид чекбокса
+}
+
+.toggle:checked {
+  background-color: $dark;
+}
+
+.toggleSwitch:hover .toggle {
+  border-color: $light;
+}
+
+span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

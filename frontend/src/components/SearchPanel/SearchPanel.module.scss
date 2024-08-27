@@ -1,0 +1,54 @@
+@import './../../styles/variables.scss';
+
+.searchPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchPanel__inputContainer {
+    display: flex;
+    align-items: center;
+}
+
+.searchPanel__input {
+    @extend %placeholder_big;
+    padding: 0 20px;
+    color: rgb(90, 90, 90);
+    font-weight: bold;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.searchPanel__searchButton {
+    margin-left: 1rem;
+    flex-direction: column;
+    width: 4rem;
+    height: 4rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s ease all;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $dark;
+
+    &__icon {
+        color: $light;
+        margin-top: 6px;
+        margin-left: 1px;
+        font-size: 2rem;
+    }
+
+}
+
+.searchPanel__toggles {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; // Ширина контейнера переключателей
+    max-width: 370px; // Ограничиваем максимальную ширину
+    margin-top: 2rem; // Увеличиваем отступ сверху
+}

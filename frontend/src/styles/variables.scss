@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+$Poppins: 'Poppins', sans-serif;
+$Ubuntu: 'Ubuntu', sans-serif;
+
+//colors
+$dark: rgb(13, 159,72);
+$light: rgb(133, 221, 44);
+$primary: rgb(59, 183, 72);
+$bg: rgb(244, 244, 255);
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+
+//spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+//border-radius
+$borderRadius: 10px;
+
+//header-height
+$headerHeight: 80px;
+
+//shadows
+$box-shadow:  0.1rem 0.4rem 0.4rem rgba($dark, .17);
+$box-shadow-sm: 0.125rem .25rem rgba($dark, .075);
+
+@mixin breakpoint($point) {
+    @if $point == md {
+        //768px
+        @media(min-width: 48em) {
+            @content 
+        }
+    }   
+}
+
+%placeholder_big {
+    text-align: left;
+    width: 22rem;
+    height: 4rem;
+    background: #d9d9d9;
+    border-radius: 10px;
+    outline: none;
+    font-family: $Ubuntu;
+    font-size: 1.5rem;
+    border: none;
+}
+
+//table
+$tableBorder: #cccccc;
+$darkGray: #333333;
+$lightGray: #f0f0f0;
+$tableBackground: #e0e0e0;
+$tableBorder: #cccccc;
+
+$danger: #e02323;
+
+
